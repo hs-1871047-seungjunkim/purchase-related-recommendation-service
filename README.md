@@ -1,5 +1,5 @@
 <div align=center>
-  
+
 ![header](https://capsule-render.vercel.app/api?type=rounded&color=36FADE&fontColor=F5F884&height=130&section=header&text=%20purchase-recommend-system%20&animation=scaleIn&fontSize=40&fontAlign=50&fontAlignY=50)
 
 </div>
@@ -153,21 +153,42 @@ Tensorflow를 이용하여 만들어진 데이터를 사용자에게 전달하�
 
 <br>
 
+
+
+- Scrapy
+
+```
+- Python으로 작성된 오픈소스 웹 크롤링 프레임워크
+- BSD-3-Cluase license
+- 웹 데이터를 수집하는 것을 목표로 설계되었고, 비동기 네트워킹 라이브러리인 Twisted를 기반으로 하기 때문에 매우 우수한 성능을 발휘함
+- API를 이용하여 데이터를 추출할 수 있고, 범용 웹 크롤러로 사용될 수 있음
+- URL을 전달하여 원하는 데이터들만 크롤링
+```
+
+```
+추천된 제품명을 웹사이트 내에서 재검색한 url을 이용해 scrapy를 통해 제품이미지,제품명,제품url을 크롤링해 사용자에게 광고를 띄워줌 
+```
+
+
+
 #### :school_satchel: 오픈소스 API 및 라이선스
 
-| open source        | input data | output data | license    |
-| ------------------ | ---------- | ----------- | ---------- |
+
+| open source           | input data | output data |  license |
+| ------------------ | ---------- | ----------- | ----------- |
 | tensorflow         | files      | tensor      | Apache 2.0 |
 | tensorflow serving | tensor     | json        | Apache 2.0 |
+| scrapy             | string     | json        | BSD-3-Clause |
 | jQuery-validation  | text       | form        | MIT        |
 | solr               | text       | json        | Apache 2.0 |
+
 
 <br>
 
 #### :arrows_counterclockwise: 자료흐름도 (Data Flow Diagrams)
 
 <div align=center>
-  
+
 ![image](./dfd%20picture.PNG)
 
 </div>
