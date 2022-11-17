@@ -63,10 +63,16 @@
 #### :school_satchel: 오픈소스 목록
 
 ```
-- jQuery-validation
-- solr
-- tensorflow
-- tensorflow serving
+1. JQuery Validation
+2. WordPress
+3. SOLR
+4. Coupang Category Recommendation API
+5. React
+6. OpenRefine
+7. Apache Spark
+8. Scrapy
+9. Tensorflow
+10. Tensorflow Serving
 ```
 
 <br>
@@ -149,12 +155,12 @@ Tensorflow를 이용하여 만들어진 데이터를 사용자에게 전달하�
 
 #### :school_satchel: 오픈소스 API 및 라이선스
 
-| open source        | input data | output data | API                    | license    |
-| ------------------ | ---------- | ----------- | ---------------------- | ---------- |
-| tensorflow         | files      | tensor      | tf.data API            | Apache 2.0 |
-| tensorflow serving | tensor     | json        | Tensorflow Serving API | Apache 2.0 |
-| jQuery-validation  | text       | form        |                        | MIT        |
-| solr               | text       | json        |                        | Apache 2.0 |
+| open source        | input data | output data | license    |
+| ------------------ | ---------- | ----------- | ---------- |
+| tensorflow         | files      | tensor      | Apache 2.0 |
+| tensorflow serving | tensor     | json        | Apache 2.0 |
+| jQuery-validation  | text       | form        | MIT        |
+| solr               | text       | json        | Apache 2.0 |
 
 <br>
 
