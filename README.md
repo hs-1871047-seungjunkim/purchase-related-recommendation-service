@@ -88,6 +88,10 @@
 - 다양한 사용자 정의 옵션 정의 가능
 ```
 
+```
+ 아이디,비밀번호,검색어의 유효성 검사를 위해 사용
+```
+
 <br>
 
 - solr
@@ -140,7 +144,6 @@ Tensorflow를 이용하여 만들어진 데이터를 사용자에게 전달하�
 
 <br>
 
-
 - Scrapy
 
 ```
@@ -152,22 +155,18 @@ Tensorflow를 이용하여 만들어진 데이터를 사용자에게 전달하�
 ```
 
 ```
-추천된 제품명을 웹사이트 내에서 재검색한 url을 이용해 scrapy를 통해 제품이미지,제품명,제품url을 크롤링해 사용자에게 광고를 띄워줌 
+추천된 제품명을 웹사이트 내에서 재검색한 url을 이용해 scrapy를 통해 제품이미지,제품명,제품url을 크롤링해 사용자에게 광고를 띄워줌
 ```
-
-
 
 #### :school_satchel: 오픈소스 API 및 라이선스
 
-
-| open source           | input data | output data |  license |
-| ------------------ | ---------- | ----------- | ----------- |
-| tensorflow         | files      | tensor      | Apache 2.0 |
-| tensorflow serving | tensor     | json        | Apache 2.0 |
-| scrapy             | text     | json        | BSD-3-Clause |
-| jQuery-validation  | text       | form        | MIT        |
-| solr               | text       | json        | Apache 2.0 |
-
+| open source        | input data | output data | license      |
+| ------------------ | ---------- | ----------- | ------------ |
+| tensorflow         | files      | tensor      | Apache 2.0   |
+| tensorflow serving | tensor     | json        | Apache 2.0   |
+| scrapy             | text       | json        | BSD-3-Clause |
+| jQuery-validation  | text       | form        | MIT          |
+| solr               | text       | json        | Apache 2.0   |
 
 <br>
 
