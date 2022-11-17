@@ -15,7 +15,7 @@
 1. 서비스 소개
 2. 유사 서비스
 3. 오픈소스 목록
-4. 오픈소스 특징 및 
+4. 오픈소스 특징 및
 5. 오픈소스 API 및 라이선스
 6. DFD(data flow diagram)
 7. 실행화면
@@ -26,12 +26,12 @@
 #### :recycle: 서비스 소개
 
 ```
-  구매 연계 추천 서비스는 사용자가 웹사이트에 접속한 후 및 상품을 구매하면 사용자와 관련 있는 상품들을 추천하는 
+  구매 연계 추천 서비스는 사용자가 웹사이트에 접속한 후 및 상품을 구매하면 사용자와 관련 있는 상품들을 추천하는
 서비스이다.
   이 추천 서비스를 적용하면 고객들의 구매 서비스 만족도를 향상시킬 수 있을 뿐만 아니라 지속적인 웹사이트 이용을 유도
 하여 상품 구매량 증가 및 기존 고객층 유지와 신규 고객 가입을 이끌어 최종적으로 수익이 증가하는 효과를 얻을 수 있다.
-  추천 서비스는 회원제로 운영된다. 사용자는 우선 웹사이트에 접속한다. 웹사이트에 접속하면 구매 이력을 조회한 결과를 
-이용하여 서비스를 제공받을 수 있다. 또한 원하는 물건을 검색하여 구매를 완료하면 구매 이력 및 물건과 관련 있는 기타 
+  추천 서비스는 회원제로 운영된다. 사용자는 우선 웹사이트에 접속한다. 웹사이트에 접속하면 구매 이력을 조회한 결과를
+이용하여 서비스를 제공받을 수 있다. 또한 원하는 물건을 검색하여 구매를 완료하면 구매 이력 및 물건과 관련 있는 기타
 물건들의 정보를 조합하여 사용자에게 맞춰진 물품들을 추천한다.
   서비스는 추천 시 여러 가지 추천 알고리즘들이 이용되어 높은 정확성을 지닌 채 상품을 추천할 수 있다.
 ```
@@ -63,16 +63,67 @@
 #### :school_satchel: 오픈소스 목록
 
 ```
-8. scrapy
-9. tensorflow
-10. tensorflow serving
+1. JQuery Validation
+2. WordPress
+3. SOLR
+4. Coupang Category Recommendation API
+5. React
+6. OpenRefine
+7. Apache Spark
+8. Scrapy
+9. Tensorflow
+10. Tensorflow Serving
 ```
 
 <br>
 
 #### :school_satchel: 오픈소스 특징 및 역할
 
-* Tensorflow
+- jquery-validation
+
+```
+-jQuery의 폼 검증 플러그인
+-MIT 라이선스 적용
+- 간단한 클라이언트 측 양식 유효성 검사를 쉽게 가능
+- 다양한 사용자 정의 옵션 정의 가능
+```
+
+데이터 흐름
+
+1. form에 text(아이디와 비밀번호)를 입력
+
+2. rule에 맞는 검증
+
+3. 성공시 submit 실시하여 서버로 form전송. 검증 실패시 submit 불가
+
+```
+-아이디,비밀번호,검색어의 유효성 검사를 위해 사용됨
+```
+
+- solr
+
+```
+ -apache에서 만든 텍스트 검색기능 제공 오픈소스
+ -apache 2.0 라이선스 적용
+ - 색인과 검색을 통한 텍스트 검색 기능 제공
+ - db와 연동해서 사용 가능
+ - http 요청에 대한 처리와 응답을 하는 웹 기반
+ - 기본적인 UI 제공
+```
+
+데이터 흐름
+
+1. String 타입의 텍스트 입력
+2. db에서 수집할 데이터 지정
+3. 텍스트 색인 후 db에서 검색
+4. 반환 데이터를 json 형태로 반환
+
+```
+ 검색을 통해 데이터를 추출하기 위해 사용
+```
+
+- Tensorflow
+
 ```
 - 2015년 구글에서 공개
 - 주로 Python 언어를 통해 작동됨
@@ -87,7 +138,8 @@
 Tensorflow에 구현된 알고리즘 중 Learing to rank 알고리즘을 사용하여 추천 데이터들의 우선순위를 기록한 데이터 생성
 ```
 
-* Tensorflow Serving
+- Tensorflow Serving
+
 ```
 - Tensorflow 데이터 배포를 위해 개발
 - Tensorflow 데이터에 대한 버전 관리 지원
@@ -121,11 +173,15 @@ Tensorflow를 이용하여 만들어진 데이터를 사용자에게 전달하�
 
 #### :school_satchel: 오픈소스 API 및 라이선스
 
+
 | open source           | input data | output data |  license |
 | ------------------ | ---------- | ----------- | ----------- |
 | tensorflow         | files      | tensor      | Apache 2.0 |
 | tensorflow serving | tensor     | json        | Apache 2.0 |
-| scrapy | string | json | BSD-3-Clause |
+| scrapy             | string     | json        | BSD-3-Clause |
+| jQuery-validation  | text       | form        | MIT        |
+| solr               | text       | json        | Apache 2.0 |
+
 
 <br>
 
