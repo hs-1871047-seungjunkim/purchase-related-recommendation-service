@@ -178,7 +178,7 @@ Tensorflow를 이용하여 만들어진 데이터를 사용자에게 전달하�
 | ------------------ | ---------- | ----------- | ----------- |
 | tensorflow         | files      | tensor      | Apache 2.0 |
 | tensorflow serving | tensor     | json        | Apache 2.0 |
-| scrapy             | string     | json        | BSD-3-Clause |
+| scrapy             | text     | json        | BSD-3-Clause |
 | jQuery-validation  | text       | form        | MIT        |
 | solr               | text       | json        | Apache 2.0 |
 
